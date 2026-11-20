@@ -31,12 +31,12 @@ jobs:
 
       - name : Ecrire diff entre les deux Q6_archive_XYZ.txt
         run : |
-          echo "Difference : $(git diff Q6_archive_XYZ.txt Q6_archive_XYZ.txt)" >> Q6_différences.txt
+          echo "Difference : $(git diff Q6_archive_XYZ.txt Q6_archive_XYZ.txt)" >> Q6_differences.txt
 
       - name: Commiter et pousser le fichier créé
         run: |
           git config --global user.email pauln8069@gmail.com
           git config --global user.name Lutteur
-          git add Q6_archive_*.txt Q6_différences.txt
-          git commit -m "Création de Q6_archive_date.txt et Q6_différences.txt" || exit 0
+          git add Q6_archive_*.txt Q6_differences.txt
+          git commit -m "Création de Q6_archive_date.txt et Q6_differences.txt" || exit 0
           git push
