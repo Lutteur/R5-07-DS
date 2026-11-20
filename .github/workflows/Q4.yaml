@@ -18,7 +18,7 @@ jobs:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
 
-      - name: Ecrire information dans Q4_archive_TOTO.txt
+      - name: Ecrire information dans Q4_archive_XYZ.txt
         run: |
           DATE_JOUR=$(TZ='Europe/Paris' date +'%d-%m-%Y')
           NOM_FICHIER="Q4_archive_${DATE_JOUR}.txt"
