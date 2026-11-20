@@ -1,0 +1,28 @@
+public class Q4
+{
+    public static void main(String[] args)
+    {
+        if (args.length < 0)
+            throw new Error("Aucun argument !!");
+
+        int n = 0;
+
+        try
+        {
+            n = Integer.parseInt(args[0]);
+
+            for (int cpt = n; cpt >= 1; cpt--)
+            {
+                for (int i = 1; i <= cpt; i++)
+                {
+                    System.out.print(cpt-i+1 + " ");
+                }
+                System.out.println();
+            }
+        }
+        catch (NumberFormatException e)
+        {
+            System.out.println("Mauvais format : " + e.getMessage());
+        }
+    }
+}
