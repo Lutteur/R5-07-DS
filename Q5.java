@@ -15,7 +15,7 @@ public class Q5
             {
                 for (int i = 1; i <= cpt; i++)
                 {
-                    System.out.print(i + " ");
+                    System.out.print("x ");
                 }
                 System.out.println();
             }

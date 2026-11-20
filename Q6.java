@@ -1,1 +1,28 @@
+public class Q6
+{
+    public static void main(String[] args)
+    {
+        if (args.length < 0)
+            throw new Error("Aucun argument !!");
 
+        int n = 0;
+
+        try
+        {
+            n = Integer.parseInt(args[0]);
+
+            for (int cpt = 1; cpt <= n; cpt++)
+            {
+                for (int i = 1; i <= cpt; i++)
+                {
+                    System.out.print("x ");
+                }
+                System.out.println();
+            }
+        }
+        catch (NumberFormatException e)
+        {
+            System.out.println("Mauvais format : " + e.getMessage());
+        }
+    }
+}
